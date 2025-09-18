@@ -1,0 +1,6 @@
+Jack,T-Shirt,XL,0xffffffff,1463,Good quality,2025-09-05,12,X13N,Male,true,/home/jihadmia/Pictures/Fabrilife_Mens_Premium_Contemporary_T_Sh-Fabrilife-619ca-395298.png
+CP Rookies,Hoodie,L,0x000000ff,1570,Well Desgined,2025-09-05,9,CP!@$,Male,true,/home/jihadmia/Downloads/462541802_508074482234047_2895917671929628555_n.jpg
+Vatijah,T-Shirt,L,0xffffffff,2471,Good Quality,2025-09-05,11,VATIJ!,Male,true,/home/jihadmia/Pictures/Fabrilife_Mens_Premium_T_Shirt_Aho_Vatij-Fabrilife-9bb37-392415.png
+Hulk,T-Shirt,XL,0x4d4d4dff,2110,Good,2025-09-10,12,HULK,Male,true,/home/jihadmia/Pictures/Fabrilife_Mens_Premium_T_Shirt_Hulk-Fabrilife-f44ea-392528.png
+Jani na,T-Shirt,XL,0x1a1a1aff,2687,Kharap,2025-09-04,2,HODAI,Male,true,/home/jihadmia/Pictures/Fabrilife_Mens_Premium_T_Shirt_Priority-Fabrilife-d9268-392419.png
+Shine,T-Shirt,XL,0xffffffff,1517,Good Quality,2025-09-05,9,SHIN,Male,true,/home/jihadmia/Pictures/Shine.png

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.dresscollection.DressFormController">
+   <children>
+      <Label layoutX="180.0" layoutY="20.0" text="Dress Collection">
+         <font>
+            <Font name="Droid Sans Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="247.0" layoutY="57.0" orientation="VERTICAL" prefHeight="384.0" prefWidth="0.0" />
+      <Label layoutX="22.0" layoutY="57.0" text="Dress Name: (Jack &amp; Hoodie)" />
+      <TextField fx:id="dressNameField" layoutX="22.0" layoutY="75.0" prefHeight="26.0" prefWidth="214.0" />
+      <Label layoutX="22.0" layoutY="116.0" text="Dress Type: (Hoodie/Sweater)" />
+      <ChoiceBox fx:id="dressTypeChoiceBox" layoutX="22.0" layoutY="134.0" prefHeight="26.0" prefWidth="214.0" />
+      <Label layoutX="22.0" layoutY="172.0" text="Available Size:(M/L)" />
+      <ChoiceBox fx:id="sizeChoiseBox" layoutX="22.0" layoutY="190.0" prefHeight="26.0" prefWidth="214.0" />
+      <Label layoutX="22.0" layoutY="228.0" text="Dress Color: " />
+      <ColorPicker fx:id="dressColorPicker" layoutX="22.0" layoutY="244.0" prefHeight="26.0" prefWidth="214.0" />
+      <Label layoutX="22.0" layoutY="288.0" text="Price:" />
+      <Slider fx:id="priceSlider" layoutX="22.0" layoutY="306.0" majorTickUnit="500.0" max="5000.0" min="500.0" prefHeight="15.0" prefWidth="214.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="22.0" layoutY="358.0" text="Dress Details:" />
+      <TextArea fx:id="dressDetailsField" layoutX="22.0" layoutY="378.0" prefHeight="69.0" prefWidth="214.0" />
+      <Button layoutX="204.0" layoutY="454.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="36.0" prefWidth="98.0" text="Save" />
+      <Label layoutX="262.0" layoutY="57.0" text="Last Purchase Date:" />
+      <DatePicker fx:id="datePicker" layoutX="262.0" layoutY="75.0" prefHeight="26.0" prefWidth="222.0" />
+      <Label layoutX="264.0" layoutY="116.0" text="Available Qunatity:" />
+      <Label layoutX="264.0" layoutY="172.0" text="Discount Code:" />
+      <PasswordField fx:id="discountCodeField" layoutX="264.0" layoutY="190.0" prefHeight="26.0" prefWidth="222.0" />
+      <Label layoutX="264.0" layoutY="228.0" text="Targated Customer: (Male/Female)" />
+      <RadioButton layoutX="264.0" layoutY="257.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="genderGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="383.0" layoutY="257.0" mnemonicParsing="false" text="Female" toggleGroup="$genderGroup" />
+      <CheckBox fx:id="checkerBox" layoutX="268.0" layoutY="305.0" mnemonicParsing="false" text="Enable Facebook Boosting." />
+      <Button layoutX="409.0" layoutY="11.0" mnemonicParsing="false" onAction="#listEvent" prefHeight="40.0" prefWidth="84.0" text="Show List" />
+      <TextField fx:id="quantitySpinner" layoutX="263.0" layoutY="134.0" prefHeight="26.0" prefWidth="214.0" />
+      <Label fx:id="nameError" layoutX="23.0" layoutY="101.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="typeError" layoutX="23.0" layoutY="158.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="sizeError" layoutX="23.0" layoutY="214.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="colorError" layoutX="23.0" layoutY="268.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceError" layoutX="22.0" layoutY="337.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="detailsError" layoutX="22.0" layoutY="472.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateError" layoutX="264.0" layoutY="101.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="qunatityError" layoutX="264.0" layoutY="158.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="genderError" layoutX="261.0" layoutY="277.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="discountError" layoutX="264.0" layoutY="214.0" prefHeight="18.0" prefWidth="132.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="369.0" text="Upload picture:" />
+      <Button layoutX="388.0" layoutY="441.0" mnemonicParsing="false" onAction="#uploadEvetn" prefHeight="26.0" prefWidth="78.0" text="Upload" />
+      <ImageView fx:id="imageView" fitHeight="112.0" fitWidth="141.0" layoutX="357.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
